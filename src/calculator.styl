@@ -1,13 +1,23 @@
 $button-width = 100vw / 4
 $row-height = 100vh / 7
 
+.calculator,
+.calculator__display,
+.calculator__keyboard,
+.calculator__key
+  box-sizing: border-box
+
 .calculator
   width: 100vw
   height: 100vh
+  font-size: 3rem
 
 .calculator__display
+  border: 0
+  width: 100vw
   height: 2 * $row-height
   background-color: black
+  color: white
 
 .calculator__keyboard
   display: flex
