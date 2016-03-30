@@ -8,7 +8,7 @@
   <body>
     <main class="calculator">
 
-      <input class="calculator__display" />
+      <div class="calculator__display" contenteditable="true"></div>
 
       <div class="calculator__keyboard">
         <button class="calculator__key" data-function="clear">C</button>
@@ -16,22 +16,32 @@
         <button class="calculator__key">%</button>
         <button class="calculator__key --is-operation">÷</button>
 
-        <button class="calculator__key">7</button>
-        <button class="calculator__key">8</button>
-        <button class="calculator__key">9</button>
+        <button class="calculator__key"
+          data-function="number" data-value="7">7</button>
+        <button class="calculator__key"
+          data-function="number" data-value="8">8</button>
+        <button class="calculator__key"
+          data-function="number" data-value="9">9</button>
         <button class="calculator__key --is-operation">x</button>
 
-        <button class="calculator__key">4</button>
-        <button class="calculator__key">5</button>
-        <button class="calculator__key">6</button>
+        <button class="calculator__key"
+          data-function="number" data-value="4">4</button>
+        <button class="calculator__key"
+          data-function="number" data-value="5">5</button>
+        <button class="calculator__key"
+          data-function="number" data-value="6">6</button>
         <button class="calculator__key --is-operation">–</button>
 
-        <button class="calculator__key">1</button>
-        <button class="calculator__key">2</button>
-        <button class="calculator__key">3</button>
+        <button class="calculator__key"
+          data-function="number" data-value="1">1</button>
+        <button class="calculator__key"
+          data-function="number" data-value="2">2</button>
+        <button class="calculator__key"
+          data-function="number" data-value="3">3</button>
         <button class="calculator__key --is-operation">+</button>
 
-        <button class="calculator__key --is-zero">0</button>
+        <button class="calculator__key --is-zero"
+          data-function="number" data-value="7">0</button>
         <button class="calculator__key">.</button>
         <button class="calculator__key --is-operation">=</button>
       </div>
