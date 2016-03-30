@@ -1,13 +1,25 @@
-*
-  background-color purple
+$button-width = 100vw / 4
+$row-height = 100vh / 7
 
-// .calculator
+.calculator
+  width: 100vw
+  height: 100vh
 
+.calculator__display
+  height: 2 * $row-height
+  background-color: black
 
-// .calculator__display
+.calculator__keyboard
+  display: flex
+  flex-wrap: wrap
 
-// .calculator__key
+.calculator__key
+  background-color: grey
+  height: $row-height
+  width: $button-width
 
-//   &.--is-operation
+  &.--is-operation
+    background-color: orange
 
-//   &.--is-zero
+  &.--is-zero
+    flex-grow: 2
